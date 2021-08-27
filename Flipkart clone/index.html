@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Online Store</title>
+  <link rel="stylesheet" href="index_stlye.css">
+</head>
+
+
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="logo">
+        <img class="flipkart_logo"
+          src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="" />
+        <div class="explore">Explore</div>
+        <div class="plus">Plus
+          <img class="plus-icon"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png" alt="" class="in">
+        </div>
+
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search for Products, Brands and more" />
+
+        <button class="search_btn"><img class="search_logo" src="./assets/search.svg" alt="" /></button>
+      </div>
+
+      <div class="navbar_rhs">
+        <div class="me">
+          <img src="me.png" alt="" class="me">
+        </div>
+        <div>Ritesh</div>
+        <div>More</div>
+
+
+      </div>
+      <div class="cart">
+        <img src="cart.png" alt="" class="cart">
+      </div>
+      <div class="cart-text">Cart</div>
+    </div>
+
+
+    <h1>Shop Products</h1>
+
+    <div onclick="showProduct()" class="products">
+
+
+
+    </div>
+  </div>
+  <div class="mid-con">
+
+
+    <div class="off">
+      <img class="off" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+    </div>
+
+    <div class="grocery">
+      <img class="grocery" src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="">
+    </div>
+
+    <div class="mobile">
+      <img class="mobile" src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="">
+    </div>
+
+    <div class="fashion">
+      <img class="fashion" src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+    </div>
+
+    <div class="laptop">
+      <img class="laptop" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+    </div>
+
+    <div class="home">
+      <img class="home" src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="">
+    </div>
+
+    <div class="appliances">
+      <img class="appliances" src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="">
+    </div>
+
+    <div class="travel">
+      <img class="travel" src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt="">
+    </div>
+
+
+
+    <div class="off1">Top Offers</div>
+    <div class="grocery1">Grocery</div>
+    <div class="mobile1">Mobiles</div>
+    <div class="fashion1">Fashion</div>
+    <div class="laptop1">Electronics</div>
+    <div class="home1">Home</div>
+    <div class="apply">Appliances</div>
+    <div class="travel1">Travel</div>
+  </div>
+  <div class="left">
+      <div class="brand">Shop By Brands</div>
+    <img class="realme" src="https://rukminim1.flixcart.com/flap/240/240/image/c7870f8a3d223a4d.jpg?q=90" alt="">
+    <img src="https://rukminim1.flixcart.com/flap/240/240/image/06538ba358b8d0b1.jpg?q=90" alt="" class="realme">
+    <img src="https://rukminim1.flixcart.com/flap/240/240/image/97d308ff71f523d2.jpg?q=90" alt="" class="realme">
+    <img src="https://rukminim1.flixcart.com/flap/240/240/image/95248cd064c85070.jpg?q=90" alt="" class="realme">
+    <img src="https://rukminim1.flixcart.com/flap/240/240/image/22154169f97c9876.jpg?q=90" alt="" class="realme">
+    <img src="https://rukminim1.flixcart.com/flap/240/240/image/e861d2e9f131c53f.jpg?q=90" alt="" class="realme">
+    <img src="https://rukminim1.flixcart.com/flap/240/240/image/b3bcae6c97320b02.jpg?q=90" alt="" class="realme">
+  </div>
+</body>
+
+</html>
+
+<script>
+  var products = [
+    {
+      name: "realme C20 (Cool Blue, 32 GB) (2 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kn7sdjk0/mobile/w/h/q/c20-rmx3063-realme-original-imagfxfzay72jqvh.jpeg?q=70",
+      price: "RS. 6999",
+      rating: "4.3",
+    },
+    {
+      name: "realme Narzo 30 (Racing Silver, 64 GB) (4 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kq18n0w0/mobile/u/w/b/narzo-30-rmx2156-realme-original-imag45ymfpry9ecq.jpeg?q=70",
+      price: "RS. 12499",
+      rating: "4.3",
+    },
+    {
+      name: "OPPO Reno6 5G (Aurora, 128 GB) (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kr2e3680/mobile/b/q/v/reno6-5g-cph2251-oppo-original-imag4xp73qsqrtnt.jpeg?q=70",
+      price: "RS. 29990",
+      rating: "4.3",
+    },
+    {
+      name: "SAMSUNG Galaxy F41 (Fusion Blue, 128 GB) (6 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kfzq8i80/mobile/y/j/f/samsung-galaxy-f41-sm-f415fzbdins-original-imafwbnpdafmeuj6.jpeg?q=70",
+      price: "RS. 19990",
+      rating: "4.3",
+    },
+    {
+      name: "OPPO Reno6 5G (Aurora, 128 GB) (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dqq7z8cgh.jpeg?q=70",
+      price: "RS. 29990",
+      rating: "4.3",
+    },
+    {
+      name: "APPLE iPhone 12 (Blue, 128 GB)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kr2e3680/mobile/b/q/v/reno6-5g-cph2251-oppo-original-imag4xp73qsqrtnt.jpeg?q=70",
+      price: "RS. 72990",
+      rating: "4.3",
+    },
+    {
+      name: "vivo Y51A (Crystal Symphony, 128 GB) (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kk1h5e80/mobile/3/7/u/vivo-y51a-v2031-original-imafzh2ud9t3wsm7.jpeg?q=70",
+      price: "RS. 17990",
+      rating: "4.3",
+    },
+    {
+      name: "OPPO Reno6 5G (Aurora, 128 GB) (8 GB RAM)",
+      img: "https://rukminim1.flixcart.com/image/832/832/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dqq7z8cgh.jpeg?q=70",
+      price: "RS. 29990",
+      rating: "4.3",
+    },
+  ];
+
+
+  //Array
+
+
+  var products_div = document.querySelector('.products')
+
+  for (let i = 0; i < products.length; i++) {
+   
+    var div = document.createElement("div");
+
+    var img = document.createElement("img");
+
+    img.src = products[i].img
+
+    img.id = "product-img"
+
+
+    var title = document.createElement('p')
+
+    title.innerText = products[i].name
+
+
+    var rating = document.createElement('button')
+
+    rating.innerText=products[i].rating
+
+    rating.id = "product-rating"
+
+
+    var price = document.createElement('p')
+
+    price.innerText = products[i].price
+
+
+    div.onclick = function(){
+
+        showProduct(products[i])
+
+    }
+
+
+    div.append(img, title, rating, price)
+
+    products_div.append(div)
+
+
+
+
+  }
+  
+
+
+  function showProduct(product){
+  
+  
+    console.log('product:', product)
+
+
+    localStorage.setItem("clicked_product", JSON.stringify(product))
+
+    window.location.href='product.html'
+
+
+  }
+
+
+</script>
